@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashBordController">
+   <children>
+      <ImageView fitHeight="79.0" fitWidth="197.0" layoutY="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/logo.gif" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" opacity="0.71" prefHeight="60.0" prefWidth="604.0" style="-fx-background-color: #1a237e;" text="Dash Board" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="37.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAdmin" alignment="CENTER" contentDisplay="TOP" layoutX="42.0" layoutY="118.0" onAction="#adminOnAction" prefHeight="150.0" prefWidth="150.0" styleClass="menue-Button" stylesheets="@../css/Dashboard.css" text="ADMIN" textFill="#16035e">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_Customer_48px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Algerian" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnReception" alignment="CENTER" contentDisplay="TOP" layoutX="215.0" layoutY="118.0" onAction="#receptionOnAction" prefHeight="150.0" prefWidth="150.0" styleClass="menue-Button" stylesheets="@../css/Dashboard.css" text="RECEPTION" textFill="#1f036b">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_Reception_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Algerian" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnChef" alignment="CENTER" contentDisplay="TOP" layoutX="391.0" layoutY="119.0" onAction="#chefOrderOnAction" prefHeight="150.0" prefWidth="150.0" styleClass="menue-Button" stylesheets="@../css/Dashboard.css" text="Florist" textFill="#1f036b">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_Employee_50px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Algerian" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

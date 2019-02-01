@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="libraries">
+    <ANNOTATIONS>
+      <root url="file://$PROJECT_DIR$/.idea/libraries" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/.idea/libraries" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/.idea/libraries" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="file://$PROJECT_DIR$/.idea/libraries" />
+    </NATIVE>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/.idea/libraries" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/.idea/libraries" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/.idea/libraries" recursive="false" type="SOURCES" />
+  </library>
+</component>

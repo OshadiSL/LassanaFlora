@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="719.0" prefWidth="1159.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.manageEmployeeController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="728.0" prefWidth="1116.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" prefHeight="57.0" prefWidth="1161.0" style="-fx-background-color: #1a237e;" text="Manage Details Employee" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblReception" layoutX="14.0" layoutY="494.0" prefHeight="207.0" prefWidth="452.0">
+              <columns>
+                <TableColumn prefWidth="88.99996948242188" text="Reception Id" />
+                <TableColumn prefWidth="109.0" text="Name" />
+                  <TableColumn prefWidth="115.0" text="User Name" />
+                  <TableColumn minWidth="0.0" prefWidth="138.0" text="Password" />
+              </columns>
+               <effect>
+                  <Glow level="0.24">
+                     <input>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <!--<Light.Distant />-->
+                           </light>
+                        </Lighting>
+                     </input>
+                  </Glow>
+               </effect>
+            </TableView>
+            <AnchorPane layoutX="583.0" layoutY="89.0" prefHeight="377.0" prefWidth="343.0" style="-fx-background-color: #e0e0e0;">
+               <children>
+                  <Label alignment="CENTER" layoutX="39.0" layoutY="14.0" prefHeight="38.0" prefWidth="263.0" text="Florist Details" textFill="#5d0eee">
+                     <font>
+                        <Font name="Algerian" size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtdeliverId" layoutX="51.0" layoutY="52.0" prefHeight="38.0" prefWidth="152.0" promptText="Florist Id">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtDeliverName" layoutX="51.0" layoutY="98.0" prefHeight="38.0" prefWidth="173.0" promptText="Florist Name">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtDeliversAddress" layoutX="51.0" layoutY="236.0" prefHeight="38.0" prefWidth="173.0" promptText="Florist Address">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtDeliverTel" layoutX="51.0" layoutY="191.0" prefHeight="38.0" prefWidth="173.0" promptText="Contact Num">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtDEliverNic" layoutX="51.0" layoutY="143.0" prefHeight="38.0" prefWidth="173.0" promptText="NIC">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton layoutX="224.0" layoutY="302.0" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #76ff03;" text="Delete">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="110.0" layoutY="302.0" prefHeight="38.0" prefWidth="109.0" style="-fx-background-color: #009688;" text="Update">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnDeliverAdd" layoutX="15.0" layoutY="302.0" onAction="#addDeliverOnActionClick" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #29b6f6;" text="Add" textFill="#222020">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <DropShadow height="80.3" radius="38.91" spread="0.31" width="77.34" />
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutX="48.0" layoutY="89.0" prefHeight="377.0" prefWidth="352.0" style="-fx-background-color: #e0e0e0;">
+               <children>
+                  <Label layoutX="35.0" layoutY="14.0" prefHeight="38.0" prefWidth="263.0" text="RECEPTION Details" textFill="#5d0eee">
+                     <font>
+                        <Font name="Algerian" size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="chefId" layoutX="45.0" layoutY="58.0" prefHeight="38.0" prefWidth="152.0" promptText="Reception Id">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="chefName" layoutX="45.0" layoutY="104.0" prefHeight="38.0" prefWidth="173.0" promptText="Reception Name">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="chefAddress" layoutX="45.0" layoutY="242.0" prefHeight="38.0" prefWidth="173.0" promptText="Reception Address">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="chefTel" layoutX="45.0" layoutY="197.0" prefHeight="38.0" prefWidth="173.0" promptText="Contact Num">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="chefNIC" layoutX="45.0" layoutY="149.0" prefHeight="38.0" prefWidth="173.0" promptText="NIC">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton layoutX="223.0" layoutY="314.0" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #76ff03;" text="Delete">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="109.0" layoutY="314.0" prefHeight="38.0" prefWidth="109.0" style="-fx-background-color: #009688;" text="Update">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnChefDetails" layoutX="19.0" layoutY="314.0" onAction="#chefAddOnClick" prefHeight="38.0" prefWidth="76.0" style="-fx-background-color: #29b6f6;" text="Add">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <!--<JFXButton fx:id="chefADDBtn" layoutX="14.0" layoutY="314.0" onAction="#chefAddOnActionOnClick" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #29b6f6;" text="Add" textFill="#222020">-->
+                     <!--<font>-->
+                        <!--<Font name="System Bold" size="12.0" />-->
+                     <!--</font>-->
+                  <!--</JFXButton>-->
+               </children>
+               <effect>
+                  <DropShadow height="65.48" radius="32.980000000000004" spread="0.28" width="68.44" />
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutX="340.0" layoutY="143.0" prefHeight="239.0" prefWidth="173.0" style="-fx-background-color: #bcaaa4;">
+               <children>
+                  <Label layoutX="18.0" layoutY="20.0" prefHeight="38.0" prefWidth="140.0" text="Genarate Password" textFill="#660ce4">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="chefUserName" layoutX="18.0" layoutY="58.0" prefHeight="38.0" prefWidth="140.0" promptText="User Name">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="chefPassWord" layoutX="18.0" layoutY="111.0" prefHeight="38.0" prefWidth="126.0" promptText="Password">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="chefConfirmPassword" layoutX="18.0" layoutY="166.0" prefHeight="38.0" prefWidth="140.0" promptText="Confirm Password">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <effect>
+                  <InnerShadow radius="33.66" width="115.64" />
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutX="844.0" layoutY="139.0" prefHeight="239.0" prefWidth="164.0" style="-fx-background-color: #bcaaa4;">
+               <children>
+                  <Label layoutX="18.0" layoutY="20.0" prefHeight="38.0" prefWidth="140.0" text="Genarate Password" textFill="#660ce4">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtDeliverUserName" layoutX="18.0" layoutY="58.0" prefHeight="38.0" prefWidth="140.0" promptText="User Name">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtDeliverPassword" layoutX="18.0" layoutY="111.0" prefHeight="38.0" prefWidth="126.0" promptText="Password">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtDeliverConfirePassword" layoutX="18.0" layoutY="166.0" prefHeight="38.0" prefWidth="140.0" promptText="Confirm Password">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+               <effect>
+                  <InnerShadow radius="33.66" width="115.64" />
+               </effect>
+            </AnchorPane>
+            <JFXTextField fx:id="dataPicker" focusColor="#1a237e" layoutX="14.0" layoutY="7.0" prefHeight="38.0" prefWidth="198.0" style="-fx-border-color: #1a237e;" unFocusColor="#1a237e" />
+            <TableView fx:id="tblDeliver" layoutX="499.0" layoutY="495.0" prefHeight="197.0" prefWidth="522.0">
+              <columns>
+                <TableColumn prefWidth="103.0" text="Florist Id" />
+                <TableColumn prefWidth="135.0" text="Name" />
+                  <TableColumn prefWidth="132.0" text="User Name" />
+                  <TableColumn prefWidth="151.0" text="Password" />
+              </columns>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+
+                     </light>
+                  </Lighting>
+               </effect>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
